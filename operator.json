@@ -4,7 +4,43 @@
   "tags": ["basic statistics"],
   "authors": ["tercen"],
   "urls": ["https://github.com/tercen/template_operator"],
-  "properties": []
+  "properties": [
+   {
+    "kind": "EnumeratedProperty",
+    "name": "sequence_type",
+    "defaultValue": "protein",
+    "values": [
+      "protein",
+      "dna",
+      "rna"
+    ],
+    "description": "dna, rna, or protein sequences?"
+  },
+  {
+    "kind": "EnumeratedProperty",
+    "name": "substitution_matrix",
+    "defaultValue": "BLOSUM62",
+    "values": [
+      "BLOSUM62",
+      "BLOSUM100",
+      "BLOSUM45",
+      "BLOSUM50",
+      "BLOSUM80",
+      "PAM30",
+      "PAM40",
+      "PAM70",
+      "PAM120",
+      "PAM250"
+    ],
+    "description": "substitution amtrix (default: BLOSUM62)"
+  },
+  {
+    "kind": "StringProperty",
+    "name": "gap_vs_gap",
+    "defaultValue": "NA",
+    "description": "gap vs gap score (default: NA)"
+  }
+  ]
 }
 
 
